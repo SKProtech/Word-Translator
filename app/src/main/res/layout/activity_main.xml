@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Spinner
+			android:id="@+id/language_from"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"/>
+
+		<ImageView
+			android:id="@+id/swap"
+			android:layout_height="50dp"
+			android:layout_width="50dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:src="@drawable/ic_swap_horizontal"/>
+
+		<Spinner
+			android:id="@+id/language_to"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:layout_height="65dp"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:textSize="15dp"
+		android:background="#FFF1EBEB"
+		android:layout_margin="15dp"
+		android:hint="Enter Text to translate"
+		android:gravity="bottom|left"
+		android:typeface="serif"
+		android:id="@+id/input"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="195dp"
+		android:text="Translate"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:background="#FF2196F3"
+		android:textColor="#FFFFFFFF"
+		android:id="@+id/translate_button"/>
+
+	<TextView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_margin="15dp"
+		android:gravity="top|left"
+		android:background="#FFFFFFFF"
+		android:typeface="serif"
+		android:scrollbars="vertical"
+		android:id="@+id/translated"/>
+
+</LinearLayout>
+
